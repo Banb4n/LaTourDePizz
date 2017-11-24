@@ -1,0 +1,18 @@
+// Config
+@import "partials/config/config";
+@import "partials/config/variables";
+@import "partials/config/mixins";
+
+// Queries
+@import "partials/queries/mobile";
+@import "partials/queries/tablet";
+
+// Components
+@import "partials/components/navbar";
+@import "partials/components/header";
+@import "partials/components/footer";
+
+// Sections
+@import "partials/sections/aboutUs";
+@import "partials/sections/ourCards";
+

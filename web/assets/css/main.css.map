@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,CAAE;EACA,UAAU,EAAE,UAAU",
+"sources": ["../sass/partials/config/_config.scss"],
+"names": [],
+"file": "main.css"
+}

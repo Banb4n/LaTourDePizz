@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" /><title>{% block title %}{% endblock %} LaTourDePizz</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/css/materialize.min.css">
+        <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
+    </head>
+    <body>
+        {% block navbar %}
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">La Tour de Pizz'</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#whoAreUs">Osez l'aventure</a></li>
+                        <li><a href="#ourCards">Découvrir la carte</a></li>
+                        <li><a href="#findUs">Ou sommes nous</a></li>
+                    </ul>
+                </div>
+            </nav>
+        {% endblock %}
+
+        {% block content %}
+        {% endblock %}
+
+        {% block footer %}
+            <footer class="page-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l6 s12">
+                            <h5 class="white-text">Footer Content</h5>
+                            <ul>
+                                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                                <li><a class="grey-text text-lighten-3" href="{{ path('CGV') }}">Mentions Légales</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container">
+                        © 2017 Copyright LaTourDePizz
+                        <a class="grey-text text-lighten-4 right" href="https://github.com/Banb4n">Made with <i class="material-icons red-text">favorite</i> by Banb4n</a>
+                    </div>
+                </div>
+            </footer>
+        {% endblock %}
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/js/materialize.min.js"></script>
+        <script src="{{ asset('assets/js/main.js') }}"></script>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
