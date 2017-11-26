@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA,CAAE;EACA,UAAU,EAAE,UAAU",
-"sources": ["../sass/partials/config/_config.scss"],
+"mappings": "AAAA,CAAE;EACA,UAAU,EAAE,UAAU;;AAExB,IAAK;EACH,UAAU,EAAE,KAAK;;AAEnB,iBAAkB;EAChB,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,SAAS;;ACRpB,UAAW;EACT,OAAO,EAAE,IAAI;EACb,QAAQ,EAAE,KAAK;EACf,KAAK,EAAE,IAAI;EACX,cAAI;IACF,gBAAgB,ECLT,OAAO;;ACAlB,OAAQ;EACN,MAAM,EAAE,eAAe;EACvB,cAAc,EAAE,IAAI;EACpB,OAAO,EAAE,EAAE;EACX,mBAAY;IACV,MAAM,EAAE,IAAI;IACZ,OAAO,EAAE,EAAE;EAEb,eAAQ;IACN,MAAM,EAAE,eAAe;;AAqB3B,aAAc;EACZ,GAAG,EAAE,KAAK;EACV,gBAAgB,EAAE,KAAK;EACvB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,MAAM;EAClB,MAAM,EAAE,IAAI;EACZ,iBAAI;IACF,UAAU,EAAE,MAAM;IAClB,OAAO,EAAE,IAAI;;ACvCjB,YAAa;EACX,gBAAgB,EFDP,OAAO",
+"sources": ["../sass/partials/config/_config.scss","../sass/partials/components/_navbar.scss","../sass/partials/config/_variables.scss","../sass/partials/components/_header.scss","../sass/partials/components/_footer.scss"],
 "names": [],
 "file": "main.css"
 }

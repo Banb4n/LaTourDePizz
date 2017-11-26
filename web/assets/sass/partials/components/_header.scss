@@ -1,0 +1,43 @@
+.slider {
+  height: 95vh !important;
+  padding-bottom: 10px;
+  z-index: 44;
+  .indicators {
+    bottom: 13px;
+    z-index: 45;
+  }
+  .slides {
+    height: 98vh !important;
+  }
+  //.carousel-item {
+  //  padding-top: 50px;
+  //}
+  //a {
+  //  background-position: center;
+  //  background-repeat: no-repeat;
+  //  background-size: cover;
+  //  &#first {
+  //    background-image: url("../imgs/pizza-large.jpg");
+  //    background-size: cover;
+  //  }
+  //  &#second {
+  //    background-image: url("../imgs/pates.jpeg");
+  //  }
+  //  &#third {
+  //    background-image: url("../imgs/d89108ec64ec.jpg");
+  //  }
+  //}
+}
+.controlSlide {
+  top: -35vh;
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin: 10px;
+  div {
+    text-align: center;
+    padding: 12px;
+  }
+}
+

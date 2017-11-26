@@ -5,53 +5,50 @@
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/css/materialize.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
         <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
     </head>
     <body>
-        {% block navbar %}
-            <nav>
-                <div class="nav-wrapper">
-                    <a href="#" class="brand-logo">La Tour de Pizz'</a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="#whoAreUs">Osez l'aventure</a></li>
-                        <li><a href="#ourCards">Découvrir la carte</a></li>
-                        <li><a href="#findUs">Ou sommes nous</a></li>
-                    </ul>
-                </div>
-            </nav>
-        {% endblock %}
+    <main>
+        <div class="row">
+            {% block navbar %}
+                {{ include('components/frame/navbar.html.twig') }}
+            {% endblock %}
+        </div>
+            {% block content %}
+                {% block header %}
+                {% endblock %}
+            {% endblock %}
+        </div>
+            {% block footer %}
+                <footer class="page-footer">
+                    {{ include('components/frame/footer.html.twig') }}
+                </footer>
+            {% endblock %}
+        </div>
+        <div class="fixed-action-btn vertical click-to-toggle">
+            <a class="btn-floating btn-large">
+                <i class="large material-icons">message</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+                {#<li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>#}
+                {#<li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>#}
+                {#<li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>#}
+            </ul>
+        </div>
+    </main>
 
-        {% block content %}
-        {% endblock %}
-
-        {% block footer %}
-            <footer class="page-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col l6 s12">
-                            <h5 class="white-text">Footer Content</h5>
-                            <ul>
-                                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                                <li><a class="grey-text text-lighten-3" href="{{ path('CGV') }}">Mentions Légales</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-copyright">
-                    <div class="container">
-                        © 2017 Copyright LaTourDePizz
-                        <a class="grey-text text-lighten-4 right" href="https://github.com/Banb4n">Made with <i class="material-icons red-text">favorite</i> by Banb4n</a>
-                    </div>
-                </div>
-            </footer>
-        {% endblock %}
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/js/materialize.min.js"></script>
+        <script
+                src="https://code.jquery.com/jquery-3.2.1.min.js"
+                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
         <script src="{{ asset('assets/js/main.js') }}"></script>
+        <script src="{{ asset('assets/js/carousel.js') }}"></script>
         {% block javascripts %}{% endblock %}
     </body>
 </html>
+
+

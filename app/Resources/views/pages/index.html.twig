@@ -1,18 +1,59 @@
 {% extends 'base.html.twig' %}
 
 {% block content %}
-    <header>
-        <h1>Bienvenue sur le site de LaTourDePizz</h1>
-    </header>
-    <main>
-        <section id="whoAreUs">
+    {% block header %}
+        <header id="headerHome">
+            <div class="row">
+                <div class="slider">
+                    <ul class="slides">
+                        <li>
+                            <img src="{{ asset('assets/imgs/pates.jpeg') }}">
+                            <div class="caption right-align">
+                                <h1>La tour de pizz' !</h1>
+                                <h4 class="light grey-text text-lighten-3">Le restaurant à ne pas manquer !</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="{{ asset('assets/imgs/d89108ec64ec.jpg') }}">
+                            <div class="caption left-align">
+                                <h1>Venez découvrir nos pizzas !</h1>
+                                <h4 class="light grey-text text-lighten-3">Une pâte 100% fait maison, des ingrédients frais et haut de gamme.</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="{{ asset('assets/imgs/pizza-large.jpg') }}">
+                            <div class="caption left-align">
+                                <h1>Right Aligned Caption</h1>
+                                <h4 class="light grey-text text-lighten-3">Here's our small slogan.</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    {% endblock %}
+    <div class="container">
+        <section id="whoAreUs" class="sectionContainer grey">
+            <div class="row">
+                <div class="col s12 l6 blue">
+                    <img src="{{ asset('assets/imgs/interieur.jpg') }}" alt="Photo intérieur" title="La salle du restaurant">
+                </div>
+                <div class="col s12 l6 red">
+                    <h2>
+
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <section id="ourCards" class="sectionContainer grey lighten-3">
+            <h2>Notre cartes</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid commodi delectus deleniti dicta dolorem dolorum, eius ex exercitationem fuga, illum libero magni nam nemo odio quaerat quibusdam vitae voluptates.</p>
 
         </section>
-        <section id="ourCards">
+        <section id="findUs" class="sectionContainer grey darken-1">
+            <h2>Ou sommes nous</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid commodi delectus deleniti dicta dolorem dolorum, eius ex exercitationem fuga, illum libero magni nam nemo odio quaerat quibusdam vitae voluptates.</p>
 
         </section>
-        <section id="findUs">
-
-        </section>
-    </main>
+    </div>
 {% endblock %}

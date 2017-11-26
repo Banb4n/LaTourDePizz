@@ -1,0 +1,13 @@
+// example : header{ @include myBorderBox; }
+@import "variables";
+
+@mixin myBorderBoxParams($color, $radius, $weight) {
+  border: $weight solid $color;
+  border-radius: $radius;
+}
+
+@mixin myBorderBox {
+  border: 1px solid $colorBorder;
+  border-radius: 3px;
+}
+
