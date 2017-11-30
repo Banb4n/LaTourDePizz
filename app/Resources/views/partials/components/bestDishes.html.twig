@@ -1,0 +1,45 @@
+{% block content %}
+    <h2 class="header">Les Best's :</h2>
+    <div class="row">
+        {% for card in 0..1 %}
+            <div class="col s16 m4 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="{{ asset('assets/imgs/2_Pizza.jpg') }}">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Nom de la pizza</span>
+                        <ul class="row">
+                            {% for products in 0.. random(2, 4) %}
+                                <li class="chip">Ingrédient</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        {% for card in 0..1 %}
+            <div class="col s16 m4 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="{{ asset('assets/imgs/pates.jpeg') }}">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Nom du plat</span>
+                        <ul class="row">
+                            {% for products in 0.. random(2, 4) %}
+                                <li class="chip">Ingrédient</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="center">
+        <a href="{{ path('cards') }}">
+            <button class="waves-effect waves-light btn-large center btn-homepage"><i class="material-icons left">filter_frames</i>Découvrir la carte</button>
+        </a>
+    </div>
+
+{% endblock %}

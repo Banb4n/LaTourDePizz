@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div class="container sectionContainer">
+        <h2 class="header">Les pizzas :</h2>
+        <div class="row">
+            {% for card in 0..13 %}
+                <div class="col s16 m4 l3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="{{ asset('assets/imgs/2_Pizza.jpg') }}">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Nom de la pizza</span>
+                            <ul class="row">
+                                {% for products in 0.. 3 %}
+                                    <li class="chip">Ingrédient</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <h2 class="header">Les plats :</h2>
+        <div class="row">
+            {% for card in 0..3 %}
+                <div class="col s16 m4 l3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="{{ asset('assets/imgs/pates.jpeg') }}">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Nom du plat</span>
+                            <ul class="row">
+                                {% for products in 0.. 3 %}
+                                    <li class="chip">Ingrédient</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <h2 class="header">Les desserts :</h2>
+        <div class="row">
+            {% for card in 0..3 %}
+                <div class="col s16 m4 l3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="{{ asset('assets/imgs/tiramisu.jpg') }}">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Nom du dessert</span>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

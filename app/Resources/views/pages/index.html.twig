@@ -4,56 +4,47 @@
     {% block header %}
         <header id="headerHome">
             <div class="row">
-                <div class="slider">
-                    <ul class="slides">
+                {{ include('partials/components/slider.html.twig') }}
+            </div>
+        </header>
+    {% endblock %}
+    <section class="container sectionContainer" id="whoAreUs">
+        <div class="row">
+            <div class="col s12 m12 l6">
+                <img src="{{ asset('assets/imgs/intro.jpg') }}" alt="Photo intérieur" title="La salle du restaurant">
+            </div>
+            <div class="col s12 m12 l6">
+                <div class="storyUs">
+                    <h3>La pizza, toute une histoire !</h3>
+                    <p><span>___</span><small> Enfin une pizza digne de se nom </small></p>
+                    <ul>
                         <li>
-                            <img src="{{ asset('assets/imgs/pates.jpeg') }}">
-                            <div class="caption right-align">
-                                <h1>La tour de pizz' !</h1>
-                                <h4 class="light grey-text text-lighten-3">Le restaurant à ne pas manquer !</h4>
-                            </div>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores culpa ducimus eius laboriosam magnam maiores minima,
+                            nesciunt nisi obcaecati perferendis placeat quod repellendus reprehenderit sed similique suscipit veniam voluptate!
                         </li>
-                        <li>
-                            <img src="{{ asset('assets/imgs/d89108ec64ec.jpg') }}">
-                            <div class="caption left-align">
-                                <h1>Venez découvrir nos pizzas !</h1>
-                                <h4 class="light grey-text text-lighten-3">Une pâte 100% fait maison, des ingrédients frais et haut de gamme.</h4>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="{{ asset('assets/imgs/pizza-large.jpg') }}">
-                            <div class="caption left-align">
-                                <h1>Right Aligned Caption</h1>
-                                <h4 class="light grey-text text-lighten-3">Here's our small slogan.</h4>
-                            </div>
+                        <li class="center">
+                            <a href="#findUs" class="waves-effect waves-light btn-large btn-homepage"><i class="material-icons left">cloud</i>Ou sommes nous ?</a>
                         </li>
                     </ul>
                 </div>
             </div>
-        </header>
-    {% endblock %}
-    <div class="container">
-        <section id="whoAreUs" class="sectionContainer grey">
-            <div class="row">
-                <div class="col s12 l6 blue">
-                    <img src="{{ asset('assets/imgs/interieur.jpg') }}" alt="Photo intérieur" title="La salle du restaurant">
-                </div>
-                <div class="col s12 l6 red">
-                    <h2>
-
-                    </h2>
-                </div>
-            </div>
-        </section>
-        <section id="ourCards" class="sectionContainer grey lighten-3">
-            <h2>Notre cartes</h2>
+        </div>
+    </section>
+    <div class="parallax-container">
+        <div class="parallax"><img src="{{ asset('assets/imgs/HD8A0367.jpg') }}"></div>
+    </div>
+    <div class="section sectionContainer" id="ourCards">
+        <div class="row container">
+            {{ include('partials/components/bestDishes.html.twig') }}
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax"><img src="{{ asset('assets/imgs/1*oyPaDNs0qtB6yCD3HQaQJg.jpeg') }}"></div>
+    </div>
+    <div class="section white sectionContainer" id="findUs">
+        <div class="row container">
+            <h2 class="header">Ou sommes nous</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid commodi delectus deleniti dicta dolorem dolorum, eius ex exercitationem fuga, illum libero magni nam nemo odio quaerat quibusdam vitae voluptates.</p>
-
-        </section>
-        <section id="findUs" class="sectionContainer grey darken-1">
-            <h2>Ou sommes nous</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid commodi delectus deleniti dicta dolorem dolorum, eius ex exercitationem fuga, illum libero magni nam nemo odio quaerat quibusdam vitae voluptates.</p>
-
-        </section>
+        </div>
     </div>
 {% endblock %}

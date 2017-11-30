@@ -5,8 +5,8 @@ main {
   min-height: 100vh; }
 
 .sectionContainer {
-  min-height: 50vh;
-  padding: 70px 20px; }
+  min-height: 80vh;
+  padding: 15vmin 20px; }
 
 .nav-fixed {
   z-index: 1000;
@@ -38,5 +38,26 @@ main {
 
 .page-footer {
   background-color: #263238; }
+
+.btn-homepage {
+  background-color: rgba(76, 175, 80, 0.8);
+  color: white; }
+  .btn-homepage:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #4CAF50;
+    border: 1px solid #4CAF50; }
+
+.storyUs {
+  margin-top: -20px;
+  padding-left: 25px; }
+  .storyUs h3 {
+    color: #4CAF50; }
+  .storyUs span {
+    color: #4CAF50;
+    font-size: 25px;
+    letter-spacing: -3px;
+    margin-right: 10px; }
+  .storyUs li {
+    margin: 0 0 40px 10px; }
 
 /*# sourceMappingURL=main.css.map */

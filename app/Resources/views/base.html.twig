@@ -13,7 +13,7 @@
     <main>
         <div class="row">
             {% block navbar %}
-                {{ include('components/frame/navbar.html.twig') }}
+                {{ include('partials/frame/navbar.html.twig') }}
             {% endblock %}
         </div>
             {% block content %}
@@ -23,7 +23,7 @@
         </div>
             {% block footer %}
                 <footer class="page-footer">
-                    {{ include('components/frame/footer.html.twig') }}
+                    {{ include('partials/frame/footer.html.twig') }}
                 </footer>
             {% endblock %}
         </div>
