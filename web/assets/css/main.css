@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 * {
   box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito', sans-serif; }
 
 main {
   min-height: 100vh; }
@@ -8,12 +12,19 @@ main {
   min-height: 80vh;
   padding: 15vmin 20px; }
 
+.parallax h2 {
+  position: relative;
+  text-align: center;
+  top: 35%;
+  color: white;
+  font-size: 5em; }
+
 .nav-fixed {
   z-index: 1000;
   position: fixed;
   width: 100%; }
   .nav-fixed nav {
-    background-color: #263238; }
+    background-color: #191919; }
 
 .slider {
   height: 95vh !important;
@@ -37,7 +48,7 @@ main {
     padding: 12px; }
 
 .page-footer {
-  background-color: #263238; }
+  background-color: #191919; }
 
 .btn-homepage {
   background-color: rgba(76, 175, 80, 0.8);
@@ -50,7 +61,7 @@ main {
 .storyUs {
   margin-top: -20px;
   padding-left: 25px; }
-  .storyUs h3 {
+  .storyUs h2 {
     color: #4CAF50; }
   .storyUs span {
     color: #4CAF50;
@@ -59,5 +70,52 @@ main {
     margin-right: 10px; }
   .storyUs li {
     margin: 0 0 40px 10px; }
+
+.headerCard {
+  height: 40vh;
+  background-color: #4CAF50;
+  background-image: url("../imgs/images.jpeg");
+  background-size: cover;
+  background-position: center; }
+  .headerCard .title {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    top: 50%;
+    transform: translatey(-50%);
+    color: #cfd8dc; }
+
+.container-Cards {
+  padding: 50px 0; }
+
+.verticalNav-Cards {
+  top: 70px;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: white; }
+  .verticalNav-Cards .logoNav {
+    margin-bottom: 20px; }
+    .verticalNav-Cards .logoNav:hover {
+      border-bottom: 1px solid lightgrey;
+      cursor: pointer; }
+      .verticalNav-Cards .logoNav:hover span {
+        color: grey; }
+    .verticalNav-Cards .logoNav img {
+      width: 40px; }
+    .verticalNav-Cards .logoNav span {
+      position: relative;
+      top: -11px;
+      left: 30px;
+      color: black; }
+
+.content-Cards {
+  margin-top: -60px; }
+  .content-Cards section {
+    padding-top: 50px; }
+  .content-Cards .title {
+    color: #4CAF50; }
+
+section ul {
+  margin: 20px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -9,4 +9,8 @@ $(document).ready(function() {
     $('.fixed-action-btn').closeFAB();
     $('.parallax').parallax();
     $('.slider').slider();
+
+    // Self function
+    scroll('#navAnchors li a');
+    scroll('#navAnchors li a');
 });

@@ -1,0 +1,61 @@
+.headerCard {
+  height: 40vh;
+  background-color: #4CAF50;
+  background-image: url("../imgs/images.jpeg");
+  background-size: cover;
+  background-position: center;
+  .title {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    top: 50%;
+    transform: translatey(-50%);
+    color: $whiteGrey;
+  }
+}
+
+.container-Cards {
+  padding: 50px 0;
+}
+
+.verticalNav-Cards {
+  top: 70px;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: white;
+  .logoNav {
+    margin-bottom: 20px;
+    &:hover {
+      border-bottom: 1px solid lightgrey;
+      cursor: pointer;
+      span {
+        color: grey;
+      }
+    }
+    img {
+      width: 40px;
+    }
+    span {
+      position: relative;
+      top: -11px;
+      left: 30px;
+      color: black;
+    }
+  }
+}
+
+.content-Cards {
+  margin-top: -60px;
+  section {
+    padding-top: 50px;
+  }
+  .title {
+    color: #4CAF50;
+  }
+}
+
+section {
+  ul {
+    margin: 20px;
+  }
+}
