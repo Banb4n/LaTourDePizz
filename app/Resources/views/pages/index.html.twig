@@ -1,18 +1,55 @@
 {% extends 'base.html.twig' %}
 
 {% block content %}
-    <header>
-        <h1>Bienvenue sur le site de LaTourDePizz</h1>
-    </header>
-    <main>
-        <section id="whoAreUs">
-
-        </section>
-        <section id="ourCards">
-
-        </section>
-        <section id="findUs">
-
-        </section>
-    </main>
+    {% block header %}
+        <header id="headerHome">
+            <div class="row">
+                {{ include('partials/components/slider.html.twig') }}
+            </div>
+        </header>
+    {% endblock %}
+    <section class="container sectionContainer" id="whoAreUs">
+        <div class="row">
+            <div class="col s12 m12 l6">
+                <img src="{{ asset('assets/imgs/intro.jpg') }}" alt="Photo intérieur" title="La salle du restaurant">
+            </div>
+            <div class="col s12 m12 l6">
+                <div class="storyUs">
+                    <h2>La pizza, toute une histoire !</h2>
+                    <p><span>___</span><small> Enfin une pizza digne de se nom </small></p>
+                    <ul>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores culpa ducimus eius laboriosam magnam maiores minima,
+                            nesciunt nisi obcaecati perferendis placeat quod repellendus reprehenderit sed similique suscipit veniam voluptate!
+                        </li>
+                        <li class="center">
+                            <a href="#findUs" class="waves-effect waves-light btn-large btn-homepage"><i class="material-icons left">cloud</i>Ou sommes nous ?</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="{{ asset('assets/imgs/1*oyPaDNs0qtB6yCD3HQaQJg.jpeg') }}">
+            <h2>Les best's</h2>
+        </div>
+    </div>
+    <div class="section sectionContainer" id="ourCards">
+        <div class="row container">
+            {{ include('partials/components/bestDishes.html.twig') }}
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="{{ asset('assets/imgs/HD8A0367.jpg') }}">
+            <h2>Où sommes nous </h2>
+        </div>
+    </div>
+    <div class="section white sectionContainer" id="findUs">
+        <div class="row container">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid commodi delectus deleniti dicta dolorem dolorum, eius ex exercitationem fuga, illum libero magni nam nemo odio quaerat quibusdam vitae voluptates.</p>
+        </div>
+    </div>
 {% endblock %}

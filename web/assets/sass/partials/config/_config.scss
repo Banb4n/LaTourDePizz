@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
 * {
   box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito', sans-serif;
+}
+main {
+  min-height: 100vh;
+}
+.sectionContainer {
+  min-height: 80vh;
+  padding: 15vmin 20px;
+}
+
+.parallax {
+  h2 {
+    position: relative;
+    text-align: center;
+    top: 35%;
+    color: white;
+    font-size: 5em;
+  }
 }

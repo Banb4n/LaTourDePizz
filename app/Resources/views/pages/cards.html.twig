@@ -1,0 +1,181 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    {% block header %}
+        <header class="headerCard">
+            <div class="title">
+                <h1>Notre carte</h1>
+            </div>
+        </header>
+    {% endblock %}
+    <div class="container-Cards">
+        <div class="row">
+            <div class="verticalNav-Cards col s12 m3 l2 offset-l1">
+                <ul id="navAnchors">
+                    <li class="logoNav col s3 m12">
+                        <a href="#pizza">
+                            <img src="{{ asset('assets/imgs/pizza.png') }}" alt="">
+                            <span>Nos pizzas</span>
+                        </a>
+                    </li>
+                    <li class="logoNav col s3 m12">
+                        <a href="#entree">
+                            <img src="{{ asset('assets/imgs/salad.png') }}" alt="">
+                            <span>Nos entrées</span>
+                        </a>
+                    </li>
+                    <li class="logoNav col s3 m12">
+                        <a href="#plats">
+                            <img src="{{ asset('assets/imgs/spaghetti.png') }}" alt="">
+                            <span>Nos plats</span>
+
+                        </a>
+                    </li>
+                    <li class="logoNav col s3 m12">
+                        <a href="#desserts">
+                            <img src="{{ asset('assets/imgs/cupcake.png') }}" alt="">
+                            <span>Nos desserts</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-Cards col s12 m8 l8 ">
+                <section id="pizza">
+                    <h2 class="header">Les pizzas :</h2>
+                    <ul class="row">
+                    {% for card in 0..13 %}
+                        <li class="col s12 m6 hoverable">
+                            <ul class="row">
+                                <li class="left">
+                                    <h5 class="title">@name.plat</h5>
+                                </li>
+                                <li class="right">
+                                    <p class="">@prix.plat</p>
+                                </li>
+                            </ul>
+                            <ul class="row">
+                                {% for products in 0.. 3 %}
+                                    <li class="chip">Ingrédient</li>
+                                {% endfor %}
+                            </ul>
+                            {#<div class="card">#}
+                                {#<div class="card-image">#}
+                                    {#<img src="{{ asset('assets/imgs/pizza_pouler.jpg') }}">#}
+                                {#</div>#}
+                                {#<div class="card-content">#}
+                                    {#<span class="card-title">Nom de la pizza</span>#}
+                                    {#<ul class="row">#}
+                                        {#{% for products in 0.. 3 %}#}
+                                            {#<li class="chip">Ingrédient</li>#}
+                                        {#{% endfor %}#}
+                                    {#</ul>#}
+                                {#</div>#}
+                            {#</div>#}
+                        </li>
+                    {% endfor %}
+                    </ul>
+                </section>
+                <section id="entree">
+                    <h2 class="header">Les entrées :</h2>
+                    <ul class="row">
+                    {% for card in 0..2 %}
+                        <li class="col s12 m6 hoverable">
+                            <ul class="row">
+                                <li class="left">
+                                    <h5 class="title">@name.plat</h5>
+                                </li>
+                                <li class="right">
+                                    <p class="">@prix.plat</p>
+                                </li>
+                            </ul>
+                            <ul class="row">
+                                {% for products in 0.. 3 %}
+                                    <li class="chip">Ingrédient</li>
+                                {% endfor %}
+                            </ul>
+                            {#<div class="card">#}
+                                {#<div class="card-image">#}
+                                    {#<img src="{{ asset('assets/imgs/1_1500.png') }}">#}
+                                {#</div>#}
+                                {#<div class="card-content">#}
+                                    {#<span class="card-title">Nom du plat</span>#}
+                                    {#<ul class="row">#}
+                                        {#{% for products in 0.. 3 %}#}
+                                            {#<li class="chip">Ingrédient</li>#}
+                                        {#{% endfor %}#}
+                                    {#</ul>#}
+                                {#</div>#}
+                            {#</div>#}
+                        </li>
+                    {% endfor %}
+                    </ul>
+                </section>
+                <section id="plats">
+                    <h2 class="header">Les plats :</h2>
+                    <ul class="row">
+                    {% for card in 0..3 %}
+                        <li class="col s12 m6 hoverable">
+                            <ul class="row">
+                                <li class="left">
+                                    <h5 class="title">@name.plat</h5>
+                                </li>
+                                <li class="right">
+                                    <p class="">@prix.plat</p>
+                                </li>
+                            </ul>
+                            <ul class="row">
+                                {% for products in 0.. 3 %}
+                                    <li class="chip">Ingrédient</li>
+                                {% endfor %}
+                            </ul>
+                            {#<div class="card">#}
+                                {#<div class="card-image">#}
+                                    {#<img src="{{ asset('assets/imgs/pates.jpeg') }}">#}
+                                {#</div>#}
+                                {#<div class="card-content">#}
+                                    {#<span class="card-title">Nom du plat</span>#}
+                                    {#<ul class="row">#}
+                                        {#{% for products in 0.. 3 %}#}
+                                            {#<li class="chip">Ingrédient</li>#}
+                                        {#{% endfor %}#}
+                                    {#</ul>#}
+                                {#</div>#}
+                            {#</div>#}
+                        </li>
+                    {% endfor %}
+                    </ul>
+                </section>
+                <section id="desserts">
+                    <h2 class="header">Les desserts :</h2>
+                    <ul class="row">
+                    {% for card in 0..3 %}
+                        <li class="col s12 m6 hoverable">
+                            <ul class="row">
+                                <li class="left">
+                                    <h5 class="title">@name.plat</h5>
+                                </li>
+                                <li class="right">
+                                    <p class="">@prix.plat</p>
+                                </li>
+                            </ul>
+                            <ul class="row">
+                                {% for products in 0.. 3 %}
+                                    <li class="chip">Ingrédient</li>
+                                {% endfor %}
+                            </ul>
+                            {#<div class="card">#}
+                                {#<div class="card-image">#}
+                                    {#<img src="{{ asset('assets/imgs/tiramisu.jpg') }}">#}
+                                {#</div>#}
+                                {#<div class="card-content">#}
+                                    {#<span class="card-title">Nom du dessert</span>#}
+                                {#</div>#}
+                            {#</div>#}
+                        </li>
+                    {% endfor %}
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+{% endblock %}
