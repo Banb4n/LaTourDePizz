@@ -13,13 +13,16 @@ main {
   min-height: 80vh;
   padding: 15vmin 20px;
 }
-
+.parallax-container {
+  height: 380px;
+}
 .parallax {
   h2 {
     position: relative;
     text-align: center;
-    top: 35%;
+    top: 30%;
     color: white;
     font-size: 5em;
   }
 }
+

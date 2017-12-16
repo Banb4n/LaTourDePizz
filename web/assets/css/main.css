@@ -12,10 +12,13 @@ main {
   min-height: 80vh;
   padding: 15vmin 20px; }
 
+.parallax-container {
+  height: 380px; }
+
 .parallax h2 {
   position: relative;
   text-align: center;
-  top: 35%;
+  top: 30%;
   color: white;
   font-size: 5em; }
 
@@ -47,16 +50,27 @@ main {
     text-align: center;
     padding: 12px; }
 
+.slider .slides li .caption {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3); }
+  .slider .slides li .caption .contentCaption {
+    margin-top: 40vh;
+    margin-left: 40px; }
+
 .page-footer {
-  background-color: #191919; }
+  background-color: #191919;
+  margin-top: -50px; }
 
 .btn-homepage {
   background-color: rgba(76, 175, 80, 0.8);
   color: white; }
   .btn-homepage:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-    color: #4CAF50;
-    border: 1px solid #4CAF50; }
+    background-color: rgba(76, 175, 80, 0.7); }
+  .btn-homepage:active {
+    background-color: rgba(76, 175, 80, 0.7); }
 
 .storyUs {
   margin-top: -20px;
@@ -117,5 +131,27 @@ main {
 
 section ul {
   margin: 20px; }
+
+#map {
+  width: 100%;
+  height: 57vh; }
+
+.containerMap {
+  background-color: #313336; }
+
+.ourHours {
+  height: 14vh;
+  margin-bottom: -80px;
+  display: block; }
+  .ourHours .contact, .ourHours .localisation {
+    padding: 22px 0 43px 0;
+    margin-bottom: 0;
+    color: lightgrey;
+    font-size: 1.1em; }
+
+.ourCGV h3 {
+  margin-top: 100px; }
+.ourCGV p {
+  font-size: 1.2em; }
 
 /*# sourceMappingURL=main.css.map */

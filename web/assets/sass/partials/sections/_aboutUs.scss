@@ -2,9 +2,10 @@
   background-color: rgba(#4CAF50, 0.8);
   color: white;
   &:hover {
-    background-color: rgba(black, 0.1);
-    color: #4CAF50;
-    border: 1px solid #4CAF50;
+    background-color: rgba(#4CAF50, 0.7);
+  }
+  &:active {
+    background-color: rgba(#4CAF50, 0.7);
   }
 }
 
