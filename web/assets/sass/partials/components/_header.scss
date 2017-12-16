@@ -9,24 +9,6 @@
   .slides {
     height: 98vh !important;
   }
-  //.carousel-item {
-  //  padding-top: 50px;
-  //}
-  //a {
-  //  background-position: center;
-  //  background-repeat: no-repeat;
-  //  background-size: cover;
-  //  &#first {
-  //    background-image: url("../imgs/pizza-large.jpg");
-  //    background-size: cover;
-  //  }
-  //  &#second {
-  //    background-image: url("../imgs/pates.jpeg");
-  //  }
-  //  &#third {
-  //    background-image: url("../imgs/d89108ec64ec.jpg");
-  //  }
-  //}
 }
 .controlSlide {
   top: -35vh;
@@ -38,6 +20,19 @@
   div {
     text-align: center;
     padding: 12px;
+  }
+}
+
+.slider .slides li .caption {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(black, 0.3);
+  .contentCaption {
+    margin-top: 40vh;
+    margin-left: 40px;
+
   }
 }
 
