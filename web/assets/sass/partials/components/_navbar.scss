@@ -1,8 +1,82 @@
-.nav-fixed {
-  z-index: 1000;
-  position: fixed;
-  width: 100%;
-  nav {
-    background-color: $blueGrey;
+// Navbar
+.linkNav {
+  font-weight: bold;
+  color: white;
+}
+.linkNavSide {
+  color: #252f3d;
+  &:hover {
+    color: $blueGrey;
   }
+}
+.enterIn {
+  background-color: #252f3d;
+  color: white;
+  &:hover {
+    background-color: rgba(#252f3d, 0.9);
+    color: $blueGrey;
+  }
+  &:active {
+    background-color: #252f3d ;
+  }
+}
+.brand-logo {
+  margin-top: 5px;
+}
+.notifications {
+  min-width: 250px;
+  margin-top: 60px;
+}
+.linkTopColor {
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.linkFixedColor {
+  color: #252f3d;
+  transition: all 0.3s ease;
+  .linkFixedColor:hover {
+    color: deepskyblue;
+  }
+}
+#sidenav-overlay {
+  z-index: 990;
+}
+
+.navbarTop {
+  background-color: rgba(black, 0.1);
+  box-shadow: 0 5px 20px rgba(black, 0.1);
+  z-index: 5000;
+  transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  min-height: 100px;
+  position: relative;
+  .button-collapse {
+    color: white;
+  }
+}
+.navbarFixed {
+  background-color: $blueGrey;
+  box-shadow: 2px 1px 5px rgba($blueGrey, 0.7);
+  transition: all 300ms ease-out;
+  -webkit-transition: all 300ms ease-out;
+  .button-collapse {
+    color: $whiteGrey;
+  }
+}
+.imgMenu {
+  display: flex;
+  span {
+    margin-top: 1px;
+    margin-left: 5px;
+  }
+  img {
+    margin-top: 16px;
+    height: 35px;
+    border: 1px solid $blueGrey;
+  }
+}
+nav {
+  background-color: inherit;
+  box-shadow: none;
 }

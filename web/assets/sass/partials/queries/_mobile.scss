@@ -1,0 +1,28 @@
+@media all and (max-width: 640px) {
+  .verticalNav-Cards {
+    top: 50px !important;
+    margin-top: -50px;
+    box-shadow: 1px 0 10px  rgba(black, 0.6) !important;
+    .logoNav {
+      img {
+        width: 20px !important;
+        margin-top: 10px !important;
+      }
+      span {
+        top: 0 !important;
+        left: 10px !important;
+      }
+    }
+
+  }
+}
+
+@media all and (max-width: 350px) {
+  .verticalNav-Cards {
+    .logoNav {
+      span {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,16 +1,17 @@
 .headerCard {
-  height: 40vh;
+  height: 45vh;
+  margin-top: -100px;
   background-color: #4CAF50;
-  background-image: url("../imgs/images.jpeg");
+  background-image: url("../imgs/carte.png");
   background-size: cover;
   background-position: center;
-  .title {
+  .bigTitle {
     position: relative;
     margin: auto;
     text-align: center;
     top: 50%;
     transform: translatey(-50%);
-    color: $whiteGrey;
+    color: black;
   }
 }
 

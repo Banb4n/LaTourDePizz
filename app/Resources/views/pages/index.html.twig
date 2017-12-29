@@ -2,8 +2,8 @@
 
 {% block content %}
     {% block header %}
-        <header id="headerHome">
-            <div class="row">
+        <header id="headerHome black">
+            <div class="row black">
                 {{ include('partials/components/slider.html.twig') }}
             </div>
         </header>
@@ -26,7 +26,7 @@
                 </div>
             </div>
             <div class="col s12 m12 l6">
-                <img src="{{ asset('assets/imgs/intro.jpg') }}" alt="Photo intérieur" title="La salle du restaurant">
+                <img src="{{ asset('assets/imgs/intro.jpg') }}" alt="Photo intérieur" title="La salle du restaurant" class="responsive-img">
             </div>
         </div>
     </section>
@@ -48,8 +48,13 @@
         </div>
     </div>
     <div class="white">
-        <div class="row containerMap">
-            <div id="map"></div>
+        <div class="row containFindUs">
+            <div class="col s12 m6 containerImg">
+                <img src="https://lh3.googleusercontent.com/SFohNToDtVcQI3IWYZuluMAIo-bQ-TA_vElafJ-iM_fsJcq_vIDq7orekBQfLDkrBFta4g0j=s239-c" class="responsive-img">
+            </div>
+            <div class="col s12 m6">
+                <div id="map"></div>
+            </div>
         </div>
     </div>
 {% endblock %}

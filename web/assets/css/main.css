@@ -22,17 +22,97 @@ main {
   color: white;
   font-size: 5em; }
 
-.nav-fixed {
-  z-index: 1000;
-  position: fixed;
-  width: 100%; }
-  .nav-fixed nav {
-    background-color: #191919; }
+@media all and (max-width: 640px) {
+  .verticalNav-Cards {
+    top: 50px !important;
+    margin-top: -50px;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.6) !important; }
+    .verticalNav-Cards .logoNav img {
+      width: 20px !important;
+      margin-top: 10px !important; }
+    .verticalNav-Cards .logoNav span {
+      top: 0 !important;
+      left: 10px !important; } }
+@media all and (max-width: 350px) {
+  .verticalNav-Cards .logoNav span {
+    display: none; } }
+.linkNav {
+  font-weight: bold;
+  color: white; }
+
+.linkNavSide {
+  color: #252f3d; }
+  .linkNavSide:hover {
+    color: #191919; }
+
+.enterIn {
+  background-color: #252f3d;
+  color: white; }
+  .enterIn:hover {
+    background-color: rgba(37, 47, 61, 0.9);
+    color: #191919; }
+  .enterIn:active {
+    background-color: #252f3d; }
+
+.brand-logo {
+  margin-top: 5px; }
+
+.notifications {
+  min-width: 250px;
+  margin-top: 60px; }
+
+.linkTopColor {
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease; }
+
+.linkFixedColor {
+  color: #252f3d;
+  transition: all 0.3s ease; }
+  .linkFixedColor .linkFixedColor:hover {
+    color: deepskyblue; }
+
+#sidenav-overlay {
+  z-index: 990; }
+
+.navbarTop {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  z-index: 5000;
+  transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  min-height: 100px;
+  position: relative; }
+  .navbarTop .button-collapse {
+    color: white; }
+
+.navbarFixed {
+  background-color: #191919;
+  box-shadow: 2px 1px 5px rgba(25, 25, 25, 0.7);
+  transition: all 300ms ease-out;
+  -webkit-transition: all 300ms ease-out; }
+  .navbarFixed .button-collapse {
+    color: #cfd8dc; }
+
+.imgMenu {
+  display: flex; }
+  .imgMenu span {
+    margin-top: 1px;
+    margin-left: 5px; }
+  .imgMenu img {
+    margin-top: 16px;
+    height: 35px;
+    border: 1px solid #191919; }
+
+nav {
+  background-color: inherit;
+  box-shadow: none; }
 
 .slider {
   height: 95vh !important;
   padding-bottom: 10px;
-  z-index: 44; }
+  z-index: 44;
+  top: -65px; }
   .slider .indicators {
     bottom: 13px;
     z-index: 45; }
@@ -86,18 +166,19 @@ main {
     margin: 0 0 40px 10px; }
 
 .headerCard {
-  height: 40vh;
+  height: 45vh;
+  margin-top: -100px;
   background-color: #4CAF50;
-  background-image: url("../imgs/images.jpeg");
+  background-image: url("../imgs/carte.png");
   background-size: cover;
   background-position: center; }
-  .headerCard .title {
+  .headerCard .bigTitle {
     position: relative;
     margin: auto;
     text-align: center;
     top: 50%;
     transform: translatey(-50%);
-    color: #cfd8dc; }
+    color: black; }
 
 .container-Cards {
   padding: 50px 0; }
@@ -132,12 +213,42 @@ main {
 section ul {
   margin: 20px; }
 
-#map {
-  width: 100%;
-  height: 57vh; }
+.floatForm {
+  position: fixed;
+  background-color: #fff;
+  width: 400px;
+  height: 550px;
+  border: 1px solid #cfd8dc;
+  border-radius: 4px;
+  bottom: 80px;
+  right: 30px;
+  z-index: 995; }
+  .floatForm .introForm {
+    background-color: #191919;
+    top: 0;
+    height: 53%;
+    margin: 0 0 1px 0;
+    padding-top: 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px; }
+    .floatForm .introForm h5, .floatForm .introForm span {
+      color: #cfd8dc; }
 
-.containerMap {
-  background-color: #313336; }
+.hide {
+  display: none; }
+
+#map {
+  width: 101%;
+  height: 54vh; }
+
+.containFindUs {
+  margin-bottom: 1px;
+  min-height: 60vh;
+  padding-bottom: 1px;
+  background-color: lightgrey;
+  overflow: hidden; }
 
 .ourHours {
   height: 14vh;
@@ -148,6 +259,13 @@ section ul {
     margin-bottom: 0;
     color: lightgrey;
     font-size: 1.1em; }
+
+.containerImg {
+  height: 60vh; }
+  .containerImg img {
+    width: 103%;
+    height: 54vh;
+    margin: 0 -10px 0 -5px; }
 
 .ourCGV h3 {
   margin-top: 100px; }
