@@ -14,15 +14,15 @@
         {% block navbar %}
             {{ include('partials/frame/navbar.html.twig') }}
         {% endblock %}
-            {% block content %}
-                {% block header %}
-                {% endblock %}
+        {% block content %}
+            {% block header %}
             {% endblock %}
-            {% block footer %}
-                <footer class="page-footer">
-                    {{ include('partials/frame/footer.html.twig') }}
-                </footer>
-            {% endblock %}
+        {% endblock %}
+        {% block footer %}
+            <footer class="page-footer">
+                {{ include('partials/frame/footer.html.twig') }}
+            </footer>
+        {% endblock %}
 
 
 
@@ -37,10 +37,10 @@
                             <img src="{{ asset('assets/imgs/logo1.png') }}" alt="LOGO" width="70px">
                             <h5>N'hésitez pas à nous envoyer un message, LaTourDePizz' est toujours à l'écoute de ses clients</h5>
                         </div>
-                        <span>Phone number</span>
-                        <br />
-                        <span>Email</span>
-                    </div>
+                        <span class="grey-text text-lighten-3"><i class="fa fa-phone-square"></i> 06 00 00 00 00</span>
+                        <br>
+                        <span class="grey-text text-lighten-3"><i class="fa fa-envelope-square"></i> contact@latourdepizz.co</span>
+                  </div>
                     <div class="row form">
                         <form class="col s12">
                             <div class="row">
@@ -65,27 +65,27 @@
         </div>
     </main>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-        <script src="{{ asset('assets/js/main.js') }}"></script>
-        <script src="{{ asset('assets/js/switchNav.js') }}"></script>
-        <script src="{{ asset('assets/js/scrollBottom.js') }}"></script>
-        <script>
-            function initMap() {
-                var laTourDePizz = {lat: 45.889951, lng: 6.788950};
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 14,
-                    center: laTourDePizz
-                });
-                var marker = new google.maps.Marker({
-                    position: laTourDePizz,
-                    map: map
-                });
-            }
-        </script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsaZMbtT605nvH9d141SOvBvyg964Gc7I&callback=initMap">
-        </script>
-        {% block javascripts %}{% endblock %}
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="{{ asset('assets/js/main.js') }}"></script>
+    <script src="{{ asset('assets/js/switchNav.js') }}"></script>
+    <script src="{{ asset('assets/js/scrollBottom.js') }}"></script>
+    <script>
+        function initMap() {
+            var laTourDePizz = {lat: 45.889951, lng: 6.788950};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 14,
+                center: laTourDePizz
+            });
+            var marker = new google.maps.Marker({
+                position: laTourDePizz,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsaZMbtT605nvH9d141SOvBvyg964Gc7I&callback=initMap">
+    </script>
+    {% block javascripts %}{% endblock %}
     </body>
 </html>
 
